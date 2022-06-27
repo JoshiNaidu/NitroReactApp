@@ -1,0 +1,66 @@
+.contact{
+    width: 100%;
+    height: 100%;
+    background: #ccc;
+}
+@media (max-width: 600px){
+
+    .contact {
+        background-color: #ccc;
+      }
+}
+@media (min-width: 1200px){
+    .h2, h2 {
+        font-size: 2rem;
+      }
+}
+@media (min-width: 768px)
+{
+
+    .site-section {
+        padding: 5em 0;
+      }
+}
+
+
+
+ h2 {
+    font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .section-title {
+    color: #007bff;
+    font-size: 45px;
+    font-weight: 642;
+  }
+  h2{
+    line-height: 1.2;
+  }
+  a:hover {
+    text-decoration: none;
+    color: #0056b3;
+  }
+  a {
+    color: #0056b3;
+  }
+  .p-5 {
+    padding: 3rem !important;
+  }
+  .bg-white {
+    background-color: #fff !important;
+  }
+  textarea.form-control {
+    height: auto;
+  }
+  
+  .send {
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    background-color: #007bff !important;
+  }
+  .send:hover{
+    background-color: black !important;
+  }
+  
