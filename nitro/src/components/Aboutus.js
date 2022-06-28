@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../styles/Aboutus.css'
 import hero1 from '../assets/hero_1.jpg'
 import slide1 from '../assets/slide_1.jpg'
@@ -13,9 +13,19 @@ import person5 from '../assets/person_5.jpg'
 import person6 from '../assets/person_6.jpg'
 import person7 from '../assets/person_7.jpg'
 import person8 from '../assets/person_8.jpg'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+// import OwlCarousel from 'react-owl-carousel';
+// import 'owl.carousel/dist/assets/owl.carousel.min.css';
+// import 'owl.carousel/dist/assets/owl.theme.default.min.css';
 
 
 function Aboutus() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
     <div className='about1'>
 
@@ -35,18 +45,18 @@ function Aboutus() {
           <div className="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
             <div className="mb-4">
               <h3 className="h3 mb-4 text-black">For the next great business</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.</p>
-              
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora cumque eligendi in nostrum labore omnis quaerat.
+
             </div>
             
             
               
             <div className="mb-4">
               <ul className="list-unstyled ul-check success">
-                <li>Officia quaerat eaque neque</li>
-                <li>Possimus aut consequuntur incidunt</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipisicing elit</li>
+               <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>Officia quaerat eaque neque</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>Possimus aut consequuntur incidunt</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>Lorem ipsum dolor sit amet</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>Consectetur adipisicing elit</li>
               </ul>
               
             </div>
@@ -64,7 +74,7 @@ function Aboutus() {
         <div className="row mb-5 justify-content-center">
           <div className="col-md-7 text-center">
             <h2 className="section-title mb-3" data-aos="fade-up" data-aos-delay="">Our Features</h2>
-            <p className="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</p>
+            <span className="lead" data-aos="fade-up" data-aos-delay="100">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus minima neque tempora reiciendis.</span>
           </div>
         </div>
         
@@ -136,13 +146,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
-                </ul>
                 <img src={person8} alt="Image" className="img-fluid"/>
+                <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                </ul>
               </figure>
               <div className="p-3">
                 <h3>Kaiara Spencer</h3>
@@ -154,13 +164,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
-                </ul>
                 <img src={person7} alt="Image" className="img-fluid"/>
+                <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                </ul>
               </figure>
               <div className="p-3">
                 <h3>Dave Simpson</h3>
@@ -172,13 +182,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
-                </ul>
                 <img src={person6} alt="Image" className="img-fluid"/>
+                <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                </ul>
               </figure>
               <div className="p-3">
                 <h3>Ben Thompson</h3>
@@ -190,13 +200,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
-                </ul>
                 <img src={person5} alt="Image" className="img-fluid"/>
+                <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                </ul>
               </figure>
               <div className="p-3">
                 <h3>Kyla Stewart</h3>
@@ -208,13 +218,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
-                </ul>
                 <img src={person1} alt="Image" className="img-fluid"/>
+                <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                </ul>
               </figure>
               <div className="p-3">
                 <h3>Kaiara Spencer</h3>
@@ -226,13 +236,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
+              <img src={person2} alt="Image" className="img-fluid"/>
+              <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
-                <img src={person2} alt="Image" className="img-fluid"/>
               </figure>
               <div className="p-3">
                 <h3>Dave Simpson</h3>
@@ -244,13 +254,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
+              <img src={person3} alt="Image" className="img-fluid"/>
+              <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
-                <img src={person3} alt="Image" className="img-fluid"/>
               </figure>
               <div className="p-3">
                 <h3>Ben Thompson</h3>
@@ -262,13 +272,13 @@ function Aboutus() {
           <div className="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
             <div className="team-member">
               <figure>
-                <ul className="social">
-                  <li><a href="#"><span className="icon-facebook"></span></a></li>
-                  <li><a href="#"><span className="icon-twitter"></span></a></li>
-                  <li><a href="#"><span className="icon-linkedin"></span></a></li>
-                  <li><a href="#"><span className="icon-instagram"></span></a></li>
-                </ul>
                 <img src={person4} alt="Image" className="img-fluid"/>
+                <ul className="social">
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                </ul>
               </figure>
               <div className="p-3">
                 <h3>Chris Stewart</h3>

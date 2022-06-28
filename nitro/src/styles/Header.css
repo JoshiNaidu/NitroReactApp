@@ -1,0 +1,24 @@
+.x--scrolled{
+  background-color: lightcyan;
+}
+
+
+  .head .navbar .container a{
+    color: aliceblue;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+    padding: 0 25px;
+  }
+  .navbar-expand-lg .navbar-collapse {
+    padding-left: 150px;
+  }
+  .navbar-light .navbar-nav .nav-link:hover{
+    color: #007bff !important;
+  }
+  .navbar-light .navbar-brand:hover{
+    color: #007bff !important;
+  }
+
+  /* <OwlCarousel className='owl-theme'  items="4" autoplay nav dots loop>
+              </OwlCarousel> */

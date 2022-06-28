@@ -19,7 +19,7 @@ function Contact() {
           <div className="col-md-4 text-center">
             <p className="mb-4">
               <i className='fab fa-facebook d-block h4 text-primary'></i>
-              <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+              <span style={{color:"black"}}>203 Fake St. Mountain View, San Francisco, California, USA</span>
             </p>
           </div>
           <div className="col-md-4 text-center">
@@ -83,7 +83,7 @@ function Contact() {
 
               <div className="row form-group">
                 <div className="col-md-12">
-                <button type="button" class=" send btn btn-primary text-white">Send Message</button>
+                <button type="button" class=" send btn btn-primary text-white" style={{background:"#007bff"}}>Send Message</button>
                 </div>
               </div>
 

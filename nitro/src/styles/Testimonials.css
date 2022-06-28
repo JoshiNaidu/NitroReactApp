@@ -1,0 +1,21 @@
+.test1 .site-section .col-md-12 .unit-4 .mb-0 a{
+  color: #007bff;
+}
+.carousel-control-prev-icon{
+  visibility:hidden;
+}
+.carousel-control-next-icon{
+  visibility:hidden;
+}
+.pricing{
+  background: #fff;
+padding: 30px;
+font-size: 1rem;
+line-height: 2.5rem;
+}
+.btn-secondary{
+  color: #fff !important;
+}
+.btn-primary{
+  color: #fff !important;
+}

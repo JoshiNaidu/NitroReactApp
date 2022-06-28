@@ -1,19 +1,49 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import '../styles/Home.css'
+import Header from '../components/Header'
+import AOS from 'aos'
+import "aos/dist/aos.css";
+
+
 
 function Home() {
+  useEffect(()=>{
+ AOS.init();
+ AOS.refresh();
+  },[]);
+
+  const handle = () =>{
+    console.log('hi')
+    var x = document.getElementById("about-section");
+    x.scrollIntoView();
+  }
   return (
-    <div className='home' data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div className='home'>
+   
+   <div className='head1'>
 
-    {/* <div id="overlayer"></div>
-  <div className="loader">
-    <div className="spinner-border text-primary" role="status">
-      <span className="sr-only">Loading...</span>
-    </div>
-  </div>
+    <Header/>
+   </div>
+      
+
+      <h1>Welcome</h1>
+
+      <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio soluta <br/> eius error.
 
 
-  <div className="site-wrap">
+      </p>
+      <button type="button" class="send btn btn-primary text-white" style={{background:"#007bff"}} data-aos='fade-up'>Get In Touch</button>
+      <br/>
+      {/* <i class="fa-thin fa-computer-mouse-scrollwheel"></i> */}
+      
+      <div className='middle' onClick={handle}>
+        <div className='mouse'>
+
+        </div>
+      </div>
+
+  {/* <div className="site-wrap">
 
     <div className="site-mobile-menu site-navbar-target">
       <div className="site-mobile-menu-header">

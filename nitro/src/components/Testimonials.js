@@ -4,15 +4,16 @@ import about1 from '../assets/about_1.jpg'
 import person2 from '../assets/person_2.png'
 import person3 from '../assets/person_3.png'
 import person4 from '../assets/person_4.png'
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import Carousel from 'react-bootstrap/Carousel';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Testimonials() {
 
-    // useEffect(() => {
-    //     AOS.init();
-    //     AOS.refresh();
-    //   }, []);
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh();
+      }, []);
   return (
     <div className='test1'>
 
@@ -24,64 +25,45 @@ function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="slide-one-item home-slider owl-carousel">
-          <div>
-            <div className="testimonial">
-              
-              <blockquote className="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
 
-              <figure className="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
-                <p>John Smith</p>
-              </figure>
-            </div>
-          </div>
-          <div>
-            <div className="testimonial">
+<Carousel variant="dark">
+      <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <Carousel.Caption>
+        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+                <span>John Smith</span>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-              <blockquote className="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-              <figure className="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src={person2} alt="Image" className="w-50 img-fluid mb-3"/></div>
-                <p>Christine Aguilar</p>
-              </figure>
-              
-            </div>
-          </div>
+      <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <Carousel.Caption>
+        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+                <span>John Smith</span>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-          <div>
-            <div className="testimonial">
+      <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <Carousel.Caption>
+        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+                <span>John Smith</span>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-              <blockquote className="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-              <figure className="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src={person4} alt="Image" className="w-50 img-fluid mb-3"/></div>
-                <p>Robert Spears</p>
-              </figure>
+      <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
+        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <Carousel.Caption>
+        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+                <span>John Smith</span>
+        </Carousel.Caption>
+      </Carousel.Item>
 
-              
-            </div>
-          </div>
+      
+      
+     
+    </Carousel>
 
-          <div>
-            <div className="testimonial">
-
-              <blockquote className="mb-5">
-                <p>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</p>
-              </blockquote>
-              <figure className="mb-4 d-flex align-items-center justify-content-center">
-                <div><img src={person4} alt="Image" className="w-50 img-fluid mb-3"/></div>
-                <p>Bruce Rogers</p>
-              </figure>
-
-            </div>
-          </div>
-
-        </div>
     </section>
 
 <section className="site-section bg-light" id="pricing-section">
@@ -96,15 +78,20 @@ function Testimonials() {
             <div className="pricing">
               <h3 className="text-center text-black">Basic</h3>
               <div className="price text-center mb-4 ">
-                <span><span>$47</span> / year</span>
+                <span><span style={{color:'#007bff',fontSize:'30px'}}>$47</span> / year</span>
               </div>
               <ul className="list-unstyled ul-check success mb-5">
                 
-                <li>Officia quaerat eaque neque</li>
-                <li>Possimus aut consequuntur incidunt</li>
-                <li className="remove">Lorem ipsum dolor sit amet</li>
-                <li className="remove">Consectetur adipisicing elit</li>
-                <li className="remove">Dolorum esse odio quas architecto sint</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Officia quaerat eaque neque</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Possimus aut consequuntur incidunt</li>
+                <li className="remove"><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+<del>Lorem ipsum dolor sit amet</del></li>
+                <li className="remove"><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+                <del>Consectetur adipisicing elit</del></li>
+                <li className="remove"><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+                <del>Dolorum esse odio quas architecto sint</del></li>
               </ul>
               <p className="text-center">
                 <a href="#" className="btn btn-secondary">Buy Now</a>
@@ -116,15 +103,19 @@ function Testimonials() {
             <div className="pricing">
               <h3 className="text-center text-black">Premium</h3>
               <div className="price text-center mb-4 ">
-                <span><span>$200</span> / year</span>
+                <span><span style={{color:'#007bff',fontSize:'30px'}}>$200</span> / year</span>
               </div>
               <ul className="list-unstyled ul-check success mb-5">
                 
-                <li>Officia quaerat eaque neque</li>
-                <li>Possimus aut consequuntur incidunt</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipisicing elit</li>
-                <li className="remove">Dolorum esse odio quas architecto sint</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Officia quaerat eaque neque</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Possimus aut consequuntur incidunt</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Lorem ipsum dolor sit amet</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Consectetur adipisicing elit</li>
+                <li className="remove"><del><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>Dolorum esse odio quas architecto sint</del></li>
               </ul>
               <p className="text-center">
                 <a href="#" className="btn btn-primary">Buy Now</a>
@@ -136,15 +127,20 @@ function Testimonials() {
             <div className="pricing">
               <h3 className="text-center text-black">Professional</h3>
               <div className="price text-center mb-4 ">
-                <span><span>$750</span> / year</span>
+                <span><span style={{color:'#007bff',fontSize:'30px'}}>$750</span> / year</span>
               </div>
               <ul className="list-unstyled ul-check success mb-5">
                 
-                <li>Officia quaerat eaque neque</li>
-                <li>Possimus aut consequuntur incidunt</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Consectetur adipisicing elit</li>
-                <li>Dolorum esse odio quas architecto sint</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Officia quaerat eaque neque</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Possimus aut consequuntur incidunt</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Lorem ipsum dolor sit amet</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Consectetur adipisicing elit</li>
+                <li><i style={{color:'green'}} class="fa fa-check" aria-hidden="true"></i>
+Dolorum esse odio quas architecto sint</li>
               </ul>
               <p className="text-center">
                 <a href="#" className="btn btn-secondary">Buy Now</a>
@@ -163,44 +159,44 @@ function Testimonials() {
             
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
             <h3 className="text-black h4 mb-4">Can I accept both Paypal and Stripe?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+            <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</span>
             </div>
             
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 className="text-black h4 mb-4">What available is refund period?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+              <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</span>
             </div>
 
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
             <h3 className="text-black h4 mb-4">Can I accept both Paypal and Stripe?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+            <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</span>
             </div>
             
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 className="text-black h4 mb-4">What available is refund period?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+              <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</span>
             </div>
           </div>
           <div className="col-lg-6">
 
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 className="text-black h4 mb-4">Where are you from?</h3>
-              <p>Voluptatum nobis obcaecati perferendis dolor totam unde dolores quod maxime corporis officia et. Distinctio assumenda minima maiores.</p>
+              <span style={{color:'grey'}}>Voluptatum nobis obcaecati perferendis dolor totam unde dolores quod maxime corporis officia et. Distinctio assumenda minima maiores.</span>
             </div>
             
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 className="text-black h4 mb-4">What is your opening time?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+              <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</span>
             </div>
 
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
             <h3 className="text-black h4 mb-4">Can I accept both Paypal and Stripe?</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+            <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</span>
             </div>
             
             <div className="mb-5" data-aos="fade-up" data-aos-delay="100">
               <h3 className="text-black h4 mb-4">What available is refund period?</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</p>
+              <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam assumenda eum blanditiis perferendis.</span>
             </div>
           </div>
         </div>
@@ -222,21 +218,21 @@ function Testimonials() {
               
               <div className="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="">
                 <div className="unit-4">
-                  <div className="unit-4-icon mr-4 mb-3"><span className="text-primary flaticon-head"></span></div>
+                  <div className="unit-4-icon mr-4 mb-3"><i className='fab fa-facebook d-block h4 text-primary'></i></div>
                   <div>
                     <h3>Web &amp; Mobile Specialties</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</p>
+                    <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis consect.</span>
                     <p className="mb-0"><a href="#">Learn More</a></p>
                   </div>
                 </div>
               </div>
               <div className="col-md-12 mb-md-5 mb-0 col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div className="unit-4">
-                  <div className="unit-4-icon mr-4 mb-3"><span className="text-primary flaticon-smartphone"></span></div>
+                  <div className="unit-4-icon mr-4 mb-3"><i className='fab fa-facebook d-block h4 text-primary'></i></div>
                   <div>
                     <h3>Intuitive Thinkers</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</p>
-                    <p className="mb-0"><a href="#">Learn More</a></p>
+                    <span style={{color:'grey'}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quis.</span>
+                    <p className="mb-0"><a style={{color:"#007bff"}} href="#">Learn More</a></p>
                   </div>
                 </div>
               </div>

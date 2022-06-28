@@ -1,14 +1,17 @@
-/* a {
-    transition: .3s all ease;
-    text-decoration: none;
-    background-color: transparent;
-  }
-  h2 {
+
+.col-md-6 .h-entry h2 a{
+    color: black !important;
     font-size: 20px;
-  }
-  h2:hover{
+}
+.col-md-6 .h-entry h2 a:hover{
     color: #007bff !important;
-  }
-  a:hover {
-    color: red !important;
-  } */
+}
+.col-md-6 .h-entry .mb-4 a{
+    color: #007bff !important;
+}
+.col-md-6 .h-entry p a{
+    color: #007bff !important;
+}
+.mb-4 p{
+    color: black;
+}
