@@ -63,5 +63,9 @@
   .send:hover{
     background-color: black !important;
   }
+
+  label.text-black{
+    padding-bottom: 10px;
+  }
  
   

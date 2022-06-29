@@ -65,17 +65,48 @@ function Header() {
       var x = document.getElementById("testimonials-section");
     x.scrollIntoView();
     }
-  
-  return (
-    <div className='head'>
 
-    <Navbar class='x' bg={navbar ? "light" : "none"} scrolling dark expand="lg" fixed='top' shadow-5-strong>
+    const handle0 = () =>{
+      console.log("head")
+      var x = document.getElementById("head");
+      x.scrollIntoView();
+    }
+
+
+
+    const [show, setShow] = useState(false)
+  const controlNavbar = () => {
+      if (window.scrollY > 150 ) {
+          setShow(true)
+      }else{
+        setShow(false)
+      }
+  }
+
+  useEffect(() => {
+      window.addEventListener('scroll', controlNavbar)
+      return () => {
+          window.removeEventListener('scroll', controlNavbar)
+      }
+    },[]);
+ 
+   
+
+   
+
+
+  return (
+   
+
+    <div className='head'  id='head' >
+
+    <Navbar className={show? 'active' : 'hidden'} bg={navbar ? "light" : "none"}  scrolling dark expand="lg" fixed='top' shadow-5-strong>
       <Container>
         <Navbar.Brand className=' mainhead' href="#home" style={{fontSize:'2rem'}}>Nitro.</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#home" onClick={handle0}>Home</Nav.Link>
             <NavDropdown title="About us" id="basic-nav-dropdown" onClick={handle}>
               <NavDropdown.Item href="#action/3.1" onClick={handle1}>Team</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2" onClick={handle2}>
@@ -99,6 +130,7 @@ function Header() {
     </Navbar>
   
 </div>
+
 
 
   );

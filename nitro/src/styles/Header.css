@@ -1,7 +1,3 @@
-.x--scrolled{
-  background-color: lightcyan;
-}
-
 
   .head .navbar .container a{
     color: aliceblue;
@@ -22,3 +18,10 @@
 
   /* <OwlCarousel className='owl-theme'  items="4" autoplay nav dots loop>
               </OwlCarousel> */
+
+.active{
+  visibility: block;
+}
+.hidden{
+  visibility: hidden;
+}

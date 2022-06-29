@@ -1,0 +1,8 @@
+@font-face {
+    font-family: jump;
+    src: local(Jumping Flash),url("./fonts/Jumping\ Flash.ttf") format("truetype");
+}
+@font-face {
+    font-family: guld;
+    src: local(Latinotype - Goldplay Light),url("./fonts/Latinotype\ -\ Goldplay\ Light.otf") format("truetype");
+}
