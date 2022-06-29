@@ -23,9 +23,9 @@ ul.social{
 }
 
 .team-member:hover .social {
-    width:100%;
-    height:100%;
-    /* background:rgba(0,0,0,.5); */
+    width:20%;
+    height:70%;
+    background:#007bff;
     position:absolute;
     top:0;
     left:0;
@@ -35,3 +35,16 @@ ul.social{
     -moz-box-sizing:border-box;
     box-sizing:border-box;
  }
+ .site-section .carousel-control-prev-icon{
+    visibility:visible !important;
+  }
+ .site-section .carousel-control-next-icon{
+    visibility:visible !important;
+  }
+  .about1 .carousel-dark .carousel-indicators {
+    visibility: hidden !important;
+  }
+
+  .about1  .carousel-item {
+        transition-duration: 1.5s;
+    }

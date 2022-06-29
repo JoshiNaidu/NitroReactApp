@@ -17,6 +17,11 @@ function Home() {
     var x = document.getElementById("about-section");
     x.scrollIntoView();
   }
+
+  const call = ( ) =>{
+    var y = document.getElementById("contact-section");
+    y.scrollIntoView();
+  }
   return (
     <div className='home'>
    
@@ -33,7 +38,7 @@ function Home() {
 
 
       </p>
-      <button type="button" class="send btn btn-primary text-white" style={{background:"#007bff"}} data-aos='fade-up'>Get In Touch</button>
+      <button type="button" class="send btn btn-primary text-white" style={{background:"#007bff"}} data-aos='fade-up' onClick={call}>Get In Touch</button>
       <br/>
       {/* <i class="fa-thin fa-computer-mouse-scrollwheel"></i> */}
       

@@ -28,33 +28,33 @@ function Testimonials() {
 
 <Carousel variant="dark">
       <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <span className='textcarous' style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px',marginTop:'-120px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
         <Carousel.Caption>
-        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+        <div style={{width:'100px',height:'66px',marginLeft:'400px',marginBottom:'-50px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
                 <span>John Smith</span>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px',marginTop:'-120px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
         <Carousel.Caption>
-        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+        <div style={{width:'100px',height:'66px',marginLeft:'400px',marginBottom:'-50px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
                 <span>John Smith</span>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px',marginTop:'-120px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
         <Carousel.Caption>
-        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+        <div style={{width:'100px',height:'66px',marginLeft:'400px',marginBottom:'-50px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
                 <span>John Smith</span>
         </Carousel.Caption>
       </Carousel.Item>
 
       <Carousel.Item style={{height:'200px',display:'flex',justifyContent:'center',alignItems:'center'}}>
-        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
+        <span style={{color:'grey',justifyContent:'center',alignItems:'center',width:'500px',marginTop:'-120px'}}>&ldquo;Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur unde reprehenderit aperiam quaerat fugiat repudiandae explicabo animi minima fuga beatae illum eligendi incidunt consequatur. Amet dolores excepturi earum unde iusto.&rdquo;</span>
         <Carousel.Caption>
-        <div style={{width:'100px',height:'66px',marginLeft:'500px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
+        <div style={{width:'100px',height:'66px',marginLeft:'400px',marginBottom:'-50px'}}><img src={person3} alt="Image" className="w-50 img-fluid mb-3"/></div>
                 <span>John Smith</span>
         </Carousel.Caption>
       </Carousel.Item>

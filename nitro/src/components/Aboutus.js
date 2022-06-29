@@ -15,6 +15,7 @@ import person7 from '../assets/person_7.jpg'
 import person8 from '../assets/person_8.jpg'
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import  Carousel  from 'react-bootstrap/Carousel'
 // import OwlCarousel from 'react-owl-carousel';
 // import 'owl.carousel/dist/assets/owl.carousel.min.css';
 // import 'owl.carousel/dist/assets/owl.theme.default.min.css';
@@ -79,53 +80,86 @@ function Aboutus() {
         </div>
         
         <div className="row" >
+        <Carousel variant="dark">
+      <Carousel.Item>
+      <div className="row" >
           <div className="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-
-            <div className="owl-carousel slide-one-item-alt">
-              <img src={slide1} alt="Image" className="img-fluid"/>
-              <img src={slide2} alt="Image" className="img-fluid"/>
-              <img src={slide3} alt="Image" className="img-fluid"/>
-              <img src={slide4} alt="Image" className="img-fluid"/>
-            </div>
-            <div className="custom-direction">
-              <a href="#" className="custom-prev"><span><span className="icon-keyboard_backspace"></span></span></a><a href="#" className="custom-next"><span><span className="icon-keyboard_backspace"></span></span></a>
-            </div>
-
+          <img src={slide1} alt="Image" className="img-fluid"/>
           </div>
           <div className="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-            
-            <div className="owl-carousel slide-one-item-alt-text">
-              <div>
+          <div>
                 <h2 className="section-title mb-3">Minimal and Modern Design</h2>
                 <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
 
                 <p><a href="#" className="btn btn-primary mr-2 mb-2">Learn More</a></p>
               </div>
-              <div>
+          </div>
+          </div>
+
+  
+      </Carousel.Item>
+      <Carousel.Item>
+      <div className="row" >
+
+      <div className="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+      <img src={slide2} alt="Image" className="img-fluid"/>
+
+          </div>
+          <div className="col-lg-5 ml-auto " data-aos="fade-up" data-aos-delay="100">
+          <div>
                 <h2 className="section-title mb-3">Do things with love</h2>
                 <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
 
                 <p><a href="#" className="btn btn-primary mr-2 mb-2">Learn More</a></p>
               </div>
-              <div>
+          </div>
+          </div>
+
+      </Carousel.Item>
+      <Carousel.Item>
+      <div className="row" >
+
+      <div className="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+      <img src={slide3} alt="Image" className="img-fluid"/>
+
+          </div>
+          <div className="col-lg-5 ml-auto " data-aos="fade-up" data-aos-delay="100">
+           
+          <div>
                 <h2 className="section-title mb-3">Take your business online</h2>
                 <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
 
                 <p><a href="#" className="btn btn-primary mr-2 mb-2">Learn More</a></p>
               </div>
-              <div>
+          </div>
+          </div>
+
+      </Carousel.Item>
+      <Carousel.Item>
+      <div className="row" >
+
+      <div className="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+      <img src={slide4} alt="Image" className="img-fluid"/>
+
+          </div>
+          <div className="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+          <div>
                 <h2 className="section-title mb-3">4 Our Dedicated Professionals</h2>
                 <p className="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <p>Est qui eos quasi ratione nostrum excepturi id recusandae fugit omnis ullam pariatur itaque nisi voluptas impedit  Quo suscipit omnis iste velit maxime.</p>
 
                 <p><a href="#" className="btn btn-primary mr-2 mb-2">Learn More</a></p>
               </div>
-            </div>
-            
           </div>
+          </div>
+
+      </Carousel.Item>
+    </Carousel>
+      
+            
         </div>
       </div>
     </section>
@@ -148,10 +182,10 @@ function Aboutus() {
               <figure>
                 <img src={person8} alt="Image" className="img-fluid"/>
                 <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
@@ -166,10 +200,10 @@ function Aboutus() {
               <figure>
                 <img src={person7} alt="Image" className="img-fluid"/>
                 <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
@@ -184,10 +218,10 @@ function Aboutus() {
               <figure>
                 <img src={person6} alt="Image" className="img-fluid"/>
                 <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
@@ -202,10 +236,10 @@ function Aboutus() {
               <figure>
                 <img src={person5} alt="Image" className="img-fluid"/>
                 <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
@@ -220,10 +254,10 @@ function Aboutus() {
               <figure>
                 <img src={person1} alt="Image" className="img-fluid"/>
                 <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
@@ -238,10 +272,10 @@ function Aboutus() {
               <figure>
               <img src={person2} alt="Image" className="img-fluid"/>
               <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
@@ -256,10 +290,10 @@ function Aboutus() {
               <figure>
               <img src={person3} alt="Image" className="img-fluid"/>
               <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
@@ -274,10 +308,10 @@ function Aboutus() {
               <figure>
                 <img src={person4} alt="Image" className="img-fluid"/>
                 <ul className="social">
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-facebook'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-twitter'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}}  className='fab fa-instagram'/></a></li>
-                  <li><a href="#"><i style={{color:'#007bff '}} className='fab fa-linkedin'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-facebook'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-twitter'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}}  className='fab fa-instagram'/></a></li>
+                  <li><a href="#"><i style={{color:'#ffff '}} className='fab fa-linkedin'/></a></li>
                 </ul>
               </figure>
               <div className="p-3">
